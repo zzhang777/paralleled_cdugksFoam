@@ -1,4 +1,4 @@
-# Unified X-Space Parallelization Algorithm for Conserved Discrete Unified Gas Kinetic Scheme  
+# Paralleled cdugksFoam
 
 ## About
 
@@ -18,8 +18,24 @@ This project is a work for the paper ***Unified X-Space Parallelization Algorith
 
 Before installing the code in this repository, we assume that you have installed the MPI library and OpenFoam version 6.
 
+Then, fetch the source code by `git clone` or `Download ZIP`.
+
+If using git:
+
 ```shell
-cd cdugksFoam/src
+git clone https://github.com/zzhang777/paralleled_cdugksFoam.git
+mv paralleled_cdugksFoam-master dugksFoam
+cd dugksFoam/src
+./Allwmake
+```
+
+If using ZIP package  :
+
+```shell
+#move the download file to dir wish to install
+unzip paralleled_cdugksFoam-master.zip 
+mv paralleled_cdugksFoam-master dugksFoam
+cd dugksFoam/src
 ./Allwmake
 ```
 
