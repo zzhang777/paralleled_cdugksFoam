@@ -45,7 +45,7 @@ cd dugksFoam/src
 
 The case setup method in cdugksFoam is almost the same as the original dugksFoam, whose document is in `doc/` directory. Here, only different parts are present.
 
-#### prepare the unstructured velocity space
+#### Prepare the unstructured velocity space
 
 The original dugksFoam adopts a structured mesh in velocity space using Newton-Cotes quadrature and half-range Gauss-Hermite quadrature. This  function is implemented by two files `constant/Xis` and `constant/weights`. The former is the velocity set, the latter is their weight.
 
@@ -55,7 +55,7 @@ For those who don't support, use mesh conversing tools provided by OpenFOAM to t
 
 After getting the velocity mesh in OpenFoam mesh format, named the mesh folder vMesh, put it in the `constant/` dir.
 
-#### boundary conditions 
+#### Boundary conditions 
 
 The current supported boundary conditions are diffusive wall boundary  and far field boundary.
 
@@ -74,7 +74,7 @@ fvDVMparas
 }
 ```
 
-### running in parallel
+### Running in parallel
 
 The X-space parallelization strategy can be configured to use physical space parallelization, velocity space parallelization, and hybrid space parallelization, respectively. 
 
