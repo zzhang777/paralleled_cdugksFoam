@@ -1,0 +1,10 @@
+*.o
+*.so
+**/linux**
+*.dep
+*.swp
+src/Make/linux**
+src/fvDVM/lnInclude/
+src/fvDVM/Make/linux**
+src/wmake
+.vscode
