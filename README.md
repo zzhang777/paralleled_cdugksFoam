@@ -61,7 +61,7 @@ The current supported boundary conditions are diffusive wall boundary  and far f
 
 #### Conserved algorithm
 
-The bug “update cell center macro by macro flux” in the dugksFoam source code is fixed to replace the integration to guarantee conservation. To use this function, set the field `macroFlux` in `constant\DVMProperties` to yes.
+The bug “update cell center macro by macro flux” in the dugksFoam source code is fixed to replace the integration to guarantee conservation. To use this function, set the field `macroFlux` in `constant/DVMProperties` to yes.
 
 ```shell
 fvDVMparas
