@@ -41,7 +41,7 @@ if __name__ == "__main__":
     root = os.getcwd()
     dict_root=os.path.join(root,'system','decomposeParDict')
 
-#need rm -f to remove the exist processorx floder
+    #need rm -f to remove the exist processorx floder
     os.system("rm -r processor*")
 
     parser = argparse.ArgumentParser(description='decompose physics space used for phy&vel parallel.')
@@ -64,7 +64,7 @@ if __name__ == "__main__":
         copy_file(path_read, path_write, i)
     modify_file(dict_root,phy_num*vel_num)
     
-	#copy vMesh
+    #copy vMesh
     os.system("echo ./processor*/constant | xargs -n 1 cp -r ./constant/vMesh")
 
 	
