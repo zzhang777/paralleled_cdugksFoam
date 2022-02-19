@@ -45,8 +45,8 @@ if __name__ == "__main__":
     os.system("rm -r processor*")
 
     parser = argparse.ArgumentParser(description='decompose physics space used for phy&vel parallel.')
-    parser.add_argument('-p', required=True, help="the number of physics domain one wish to decompose", type=int)
-    parser.add_argument('-v', required=True, help="the number of velocity domain one wish to decompose", type=int)
+    parser.add_argument('-p', required=True, help="the number of physical subdomains one wish to decompose", type=int)
+    parser.add_argument('-v', required=True, help="the number of velocity subdomains one wish to decompose", type=int)
     args = parser.parse_args()
     phy_num = args.p
     vel_num = args.v
