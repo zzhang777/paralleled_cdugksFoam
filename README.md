@@ -125,5 +125,8 @@ Tecplot has supported OpenFOAM data format since the 2013 release. Or you can us
 * [7] J. Chen, S. Liu, Y. Wang, C. Zhong, Conserved discrete unified gaskinetic scheme with unstructured discrete velocity space, [Physical Review E 100 (4) (2019) 043305](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.100.043305).
 * [8] S. Li, Q. Li, S. Fu, J. Xu, The high performance parallel algorithm for unified gas-kinetic scheme, in: [AIP Conference Proceedings, Vol. 1786, AIP Publishing LLC, 2016, p. 180007](https://aip.scitation.org/doi/abs/10.1063/1.4967676). 
 * [9] S. Tan, W. Sun, J. Wei, G. Ni, A parallel unified gas kinetic scheme for three-dimensional multi-group neutron transport, [Journal of Computational Physics 391 (2019) 37–58](https://www.sciencedirect.com/science/article/pii/S0021999119302876).
+* [10] Chen, J, Liu, S, Wang, Y, Zhong, C. A Compressible Conserved Discrete Unified Gas-Kinetic Scheme with Unstructured Discrete Velocity Space for Multi-Scale Jet Flow Expanding into Vacuum Environment, [Communications in Computational Physics. 2020, 28, 1502–1535](https://global-sci.org/intro/article_detail/cicp/18109.html).
+  [11] Yuan R, Liu S, Zhong C. A multi-prediction implicit scheme for steady state solutions of gas flow in all flow regimes, [Communications in Nonlinear Science and Numerical Simulation, 2021, 92: 105470](https://www.sciencedirect.com/science/article/abs/pii/S1007570420303002).
+  [12] Yuan R, Liu S, Zhong C. A novel multiscale discrete velocity method for model kinetic equations, [Communications in Nonlinear Science and Numerical Simulation, 2021, 92: 105473](https://www.sciencedirect.com/science/article/abs/pii/S1007570420303038).
 
  
