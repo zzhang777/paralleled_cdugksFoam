@@ -2,12 +2,7 @@
 
 ## About
 
-This project is a work for the paper*** [Unified X-Space Parallelization Algorithm for Conserved Discrete Unified Gas Kinetic Scheme](https://www.sciencedirect.com/science/article/abs/pii/S0010465522001291)***.  The open source multiscale flow solver dugksFoam  is optimized with unstructured mesh,  conserved algorithm, and hybrid space parallelization to achieve better computational accuracy and efficiency.
-
-<div align=center>
-     <img src="pic\XspaceDemo.png">
-</div>
-
+This project is a work for the paper [Unified X-Space Parallelization Algorithm for Conserved Discrete Unified Gas Kinetic Scheme](https://www.sciencedirect.com/science/article/abs/pii/S0010465522001291). The open source multiscale flow solver dugksFoam is optimized with unstructured mesh,  conserved algorithm, and hybrid space parallelization to achieve better computational accuracy and efficiency.
 
 ## Features
 
