@@ -92,7 +92,7 @@ python multidecompose.py -p M -v N
 
 `M` means physical space is decomposed into M subdomains, `N` means velocity space is decomposed into N subdomains. `M = 1` when using velocity space parallelization, `N = 1` when using velocity space parallelization. After domain decomposition, the processor folder will be created under the case directory. It contains a subdomain of physical mesh, velocity mesh, and the initial field.
 
-2.Launch MPI processes
+2. Launch MPI processes
 
 ```shell
 mpirun -n M ∗ N dugksFoam -parallel -dvParallel -pd M
