@@ -51,21 +51,25 @@ if __name__ == "__main__":
     phy_num = args.p
     vel_num = args.v
    
-    #modify numofsubdomains in decomposePar
+    #modify numofsubdomains = phy_num in decomposePar
     modify_file(dict_root,phy_num)
+
+    #create the first row
     os.system("decomposePar")
-    for i in range(phy_num):
-        dir='processor'+str(i)
-        os.system(" cp -r constant/vMesh/     %s/constant/"  % (dir))
     
+    #create the rest processors folders
     for i in range(phy_num, phy_num * vel_num):
         path_read = os.path.join(root, 'processor'+str(i % phy_num))
         path_write = os.path.join(root, 'processor'+str(i))
         copy_file(path_read, path_write, i)
+    
+    #modify numofsubdomains = phy_num*vel_num in decomposePar
     modify_file(dict_root,phy_num*vel_num)
     
-	#copy vMesh
+    #copy vMesh
     os.system("echo ./processor*/constant | xargs -n 1 cp -r ./constant/vMesh")
+
+    
 
 	
 
