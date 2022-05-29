@@ -2,12 +2,7 @@
 
 ## About
 
-This project is a work for the paper*** [Unified X-Space Parallelization Algorithm for Conserved Discrete Unified Gas Kinetic Scheme](https://www.sciencedirect.com/science/article/abs/pii/S0010465522001291)***.  The open source multiscale flow solver dugksFoam  is optimized with unstructured mesh,  conserved algorithm, and hybrid space parallelization to achieve better computational accuracy and efficiency.
-
-<div align=center>
-     <img src="pic\XspaceDemo.png">
-</div>
-
+This project is a work for the paper [Unified X-Space Parallelization Algorithm for Conserved Discrete Unified Gas Kinetic Scheme](https://www.sciencedirect.com/science/article/abs/pii/S0010465522001291). The open source multiscale flow solver dugksFoam is optimized with unstructured mesh,  conserved algorithm, and hybrid space parallelization to achieve better computational accuracy and efficiency.
 
 ## Features
 
@@ -97,7 +92,7 @@ python multidecompose.py -p M -v N
 
 `M` means physical space is decomposed into M subdomains, `N` means velocity space is decomposed into N subdomains. `M = 1` when using velocity space parallelization, `N = 1` when using velocity space parallelization. After domain decomposition, the processor folder will be created under the case directory. It contains a subdomain of physical mesh, velocity mesh, and the initial field.
 
-2.Launch MPI processes
+2. Launch MPI processes
 
 ```shell
 mpirun -n M ∗ N dugksFoam -parallel -dvParallel -pd M
