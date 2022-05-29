@@ -41,7 +41,7 @@ if __name__ == "__main__":
     root = os.getcwd()
     dict_root=os.path.join(root,'system','decomposeParDict')
 
-#need rm -f to remove the exist processorx floder
+#need rm -f to remove the existing processorx folder
     os.system("rm -r processor*")
 
     parser = argparse.ArgumentParser(description='decompose physics space used for phy&vel parallel.')
