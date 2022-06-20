@@ -76,11 +76,25 @@ fvDVMparas
 }
 ```
 
+#### Others
+
+`xiMax`、`xiMin` and `nDV` in `fvDVMparas` in file `constant/DVMProperties` don't need to be configured. These data will be calculated in the program. 
+
+```
+fvDVMparas
+{
+    xiMax       xiMax [0 1 -1 0 0 0 0]    1;
+    xiMin       xiMin [0 1 -1 0 0 0 0]   -1.766485662735688e+03;
+    nDV               28;       // Number of discrete velocity, shoud be 4*Z + 1 if using compound N-C quardrature
+    macroFlux  yes;
+}
+```
+
 ### Running in parallel
 
 The X-space parallelization strategy can be configured to use physical space parallelization, velocity space parallelization, and hybrid space parallelization, respectively. 
 
-First, one should enter the case dir and always make sure the decomposition script `multidecompose.py` is in the dir.
+First, one should enter the case dir and always make sure the decomposition script `multidecompose.py` is in the dir. Configure the physical space decomposition method in `system/decomposeParDict`.
 
 Then, execute the uniform routine listed below.
 
